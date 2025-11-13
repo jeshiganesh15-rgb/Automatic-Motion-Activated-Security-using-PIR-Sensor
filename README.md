@@ -60,11 +60,36 @@ Step 7: Save Your Work
 
 
 # Code:
+```
+int sensorState = 0;
 
+void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(13, OUTPUT);
+  Serial.begin(9600);
+
+}
+
+void loop()
+{
+  // read the state of digital input pin 2
+  sensorState = digitalRead(2);
+  // check digital pin 2 is HIGH. if it is, set the
+  // LED on.
+  if (sensorState == HIGH) {
+    digitalWrite(13, HIGH);
+    Serial.println("Sensor activated!");
+  } else {
+    digitalWrite(13, LOW);
+     Serial.println("Sensor Deactivated!");
+  }
+  delay(10); 
+}
+```
 
 
 # Output:
-
 
 
 
