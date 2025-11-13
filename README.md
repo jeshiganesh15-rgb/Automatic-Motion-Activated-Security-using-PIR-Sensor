@@ -93,6 +93,10 @@ void loop()
 
 
 
+
+Uploading WhatsApp Video 2025-11-13 at 20.02.01_ac7fb1c6.mp4…
+
+
 # Result:
 The PIR sensor successfully detected motion and triggered the Arduino to turn ON the built-in LED. The LED remained OFF when no motion was present, confirming correct circuit and code functionality.
 
